@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Tyagi - Introduction</title>
+    <style>
+        /* --- General Setup & Typography --- */
+        :root {
+            /* Soft Pastel Colors */
+            --pastel-pink: #FFD1DC; /* Light pink for accents/background */
+            --pastel-blue: #BFEAF5; /* Light blue for secondary background/divs */
+            --pastel-green: #D7FFE3; /* Light green for borders/accents */
+            --pastel-yellow: #FFFADD; /* Very light yellow/cream for main background */
+            --text-dark: #333333;    /* Dark gray for main text */
+            --text-light: #555555;   /* Medium gray for secondary text */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--pastel-yellow);
+            color: var(--text-dark);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--pastel-pink); /* Soft pink separator */
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: var(--text-dark);
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+
+        /* --- Main Content Sections --- */
+        .section {
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            /* Optional: Add a light background to distinguish sections */
+            background-color: var(--pastel-blue); /* Light blue for separation */
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--pastel-green); /* Green accent bar */
+            padding-left: 15px;
+        }
+
+        /* --- About Me Styling --- */
+        .about-me p {
+            font-size: 1em;
+            color: var(--text-dark);
+            text-align: justify;
+        }
+
+        /* --- Hobbies Styling (List) --- */
+        .hobbies ul {
+            list-style-type: none; /* Remove default bullet */
+            padding: 0;
+        }
+
+        .hobbies li {
+            font-size: 1em;
+            margin-bottom: 10px;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .hobbies li::before {
+            content: '🌸'; /* Soft flower emoji bullet */
+            margin-right: 10px;
+            color: var(--pastel-pink); /* Not strictly necessary but keeps the theme */
+        }
+
+        /* --- Footer/Contact --- */
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px dashed var(--text-light);
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--pastel-pink);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Ansh Tyagi</h1>
+            <p>B.Tech Computer Science and Engineering | 1st Year Student</p>
+            <p>College of Engineering Roorkee (COER)</p>
+        </header>
+
+        <section class="section about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Ansh Tyagi, a passionate first-year student pursuing a B.Tech in Computer Science and Engineering at COER. 
+                I have a keen interest in the world of programming, problem-solving, and web development. 
+                I am currently focused on building a strong foundation in data structures, algorithms, and core programming languages. 
+                I thrive on learning new technologies and look forward to contributing to innovative projects.
+            </p>
+        </section>
+
+        <section class="section hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Listening to **ambient electronic music** for focus and relaxation.</li>
+                <li>Exploring new **competitive programming** challenges to sharpen logical thinking.</li>
+                <li>**Sketching and doodling** in a notebook, which serves as a creative break from coding.</li>
+                <li>Reading **non-fiction books** on technology, personal development, and future trends.</li>
+                <li>Playing **strategic board games** with friends on weekends.</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>Connect with me:</p>
+            <a href="mailto:your.email@example.com">Email</a>
+            &bull;
+            <a href="#">LinkedIn</a>
+            &bull;
+            <a href="#">GitHub</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
